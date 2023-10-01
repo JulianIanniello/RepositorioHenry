@@ -1,12 +1,192 @@
-html {
+/* FONDO DE TODOS LOS HTML */
 
-background-color:lightgray;
-text-align: center;
+html { 
+
+background-color: lightgray;
 
 }
 
-h1 {
+/* INDEX */
 
-    color: black
+.H1-index {
+
+    color: black;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     
+}
+
+.Imagen-index{
+
+    text-align: center;
+
+}
+
+.H2-index{
+
+text-align: center;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+/* ABOUT */
+
+.Nav-about {
+
+   background-color: green;
+   display: flex;
+   list-style-type: square;
+   justify-content: space-around;
+   align-items: center;
+   font-size: 230%;
+   
+}
+
+.H2-about {
+
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+text-decoration: underline;
+text-decoration-color: blueviolet;
+font-size: 200%;
+
+}
+
+.P-1-about {
+
+font-size: 150%;
+font-style: italic;
+
+
+}
+
+.P-2-about {
+
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+font-size: 120%;
+
+}
+
+.P-2-about-historia {
+
+    text-decoration: underline;
+    font-style: italic;
+}
+
+.P-3-about {
+
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-size: 120%;
+
+}
+
+.P-3-about-ubicacion {
+
+    text-decoration: underline;
+    font-style: italic;
+}
+
+.P-4-about {
+
+font-size: 300%;
+
+}
+
+/* ACCOMMODATION */
+
+.Nav-acco {
+
+    background-color: green;
+    display: flex;
+    list-style-type: square;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 230%;
+
+}
+
+.Table.accommodation {
+
+justify-content: center;
+align-content: center;
+
+}
+
+/* VISIT ACTIVITIES */
+
+.Nav-Visits {
+
+    background-color: green;
+    display: flex;
+    list-style-type: square;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 230%;
+
+}
+
+.Table-Visits-Titulo {
+
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+font-size: larger;
+
+
+}
+
+.Table-Visits-Thead {
+
+text-decoration: underline;
+font-size: 150%;
+
+}
+
+.Table-Visits-Tbody {
+
+font-size: larger;
+
+}
+
+.Table-Visits-Tfoot {
+
+
+font-size: larger;
+
+}
+
+/* ENTERTAINMENT */
+
+.Nav-Enter {
+
+    background-color: green;
+    display: flex;
+    list-style-type: square;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 230%;
+
+}
+
+.H3-Enter {
+
+font-size: 300%;
+text-decoration: underline;
+
+}
+
+/* FORM */
+
+.Nav-Form {
+
+    background-color: green;
+    display: flex;
+    list-style-type: square;
+    justify-content: center;
+    align-items: center;
+    font-size: 230%;
+
+}
+
+.Form {
+
+font-size: 200%;
+
 }

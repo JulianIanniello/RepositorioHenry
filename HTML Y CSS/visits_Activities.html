@@ -3,7 +3,7 @@
 <html lang="es">
 
 <head>
-
+    <link rel="stylesheet" href="index.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Visits and Activities</title>
@@ -12,46 +12,51 @@
 <body>
 
     <nav>
-
-        <ol>
-            <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="about.html">Informacion de interes.</a><br>
-            <li><a href="accommodation.html">Alojamiento</a><br></li>
-            <li><a href="visits_Activities.html">Actividades</a></li>
-            <li><a href="entertainment.html">Entretenimiento</a><br></li>
-            <li><a href="form.html">Contactanos</a><br></li>
-            </ul>
-        </ol>
         
+        <ul class="Nav-Visits">
+            <li><a href="index.html">Inicio</a></li><br>
+            <li><a href="about.html">Informacion de interes.</a></li><br>
+            <li><a href="accommodation.html">Alojamiento</a></li><br>
+            <li><a href="visits_Activities.html">Actividades</a></li><br>
+            <li><a href="entertainment.html">Entretenimiento</a></li><br>
+            <li><a href="form.html">Contactanos</a><br></li>
+        </ul>
+       
     </nav>
     
-    <ol>
-        <b><li>Actividades</li><br></b>
-        <ul>
-            <strong><li>Museos</li><br></strong>
-            <strong><li>Actividades en Familia</li><br></strong>
-            <strong><li>Paseo en la Naturaleza</li><br></strong>
-        </ul>
-        <b><li>Deportes</li><br></b>
-        <ul>
-            <strong><li>Surf</li><br></strong>
-            <strong><li>Futbol</li><br></strong>
-            <strong><li>Patinaje</li><br></strong>
-        </ul>
-        <b><li>Visitas</li><br></b>
-        <ul>
-            <strong><li>Monumentos</li><br></strong>
-            <strong><li>Lugares Historicos</li><br></strong>
-            <strong><li>Ferias</li><br></strong>
-        </ul>
-        <b><li>Playas</li><br></b>
-        <ul>
-            <strong><li>Del carmen</li><br></strong>
-            <strong><li>Monte Sur</li><br></strong>
-            <strong><li>Colon</li><br></strong>
-        </ul>
-    </ol>
+    <table border="8" cellpadding="100" cellspacing="100" class="Table-Visits">
+        <caption>
+            <strong class="Table-Visits-Titulo">Anote cuales Actividades desea realizar para comentarselo al personal.</strong>
+        </caption>
+        <thead class="Table-Visits-Thead">
+            <th><strong>Actividades</strong></th>
+            <th><strong>Deportes</strong></th>
+            <th><strong>Visitas</strong></th>
+            <th><strong>Playas</strong></th>
+        </thead>
+        <tbody class="Table-Visits-Tbody">
+            <tr>
+                <td>Museos</td>
+                <td>Surf</td>
+                <td>Monumentos</td>
+                <td>Del Carmen</td>
+            </tr>
+            <tr>
+                <td>Actividades en Familia</td>
+                <td>Futbol</td>
+                <td>Lugares Historicos</td>
+                <td>Monte Sur</td>
+            </tr>
+        </tbody>
+        <tfoot class="Table-Visits-Tfoot">
+            <tr>
+                <td>Paseo en la Naturaleza</td>
+                <td>Patinaje</td>
+                <td>Ferias</td>
+                <td>Colon</td>
+            </tr>
+        </tfoot>
+    </table>
 
 </body>
 

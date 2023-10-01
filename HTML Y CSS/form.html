@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-
+<link rel="stylesheet" href="index.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario </title>
@@ -12,22 +12,21 @@
 
     <nav>
 
-        <ol>
-            <ul>
-            <li><a href="index.html">Inicio</a></li>
-            </ul>
-        </ol>
-        
+        <ul class="Nav-Form">
+            <li><a href="index.html">Inicio</a></li><br>
+        </ul>
+       
     </nav>
 
+    <h1>En caso de tener consultas complete el formulario y nos contactaremos a la brevedad.</h1>
 
-    <form action="Formulario" method="get" enctype="multipart/form-data">
+    <form class="Form" method="POST" action="mailto:ngaldoporpora@soyhenry.com">
 
         <label for="Nombre">Nombre completo</label>
-        <input type="text" name="nombre" value=""/><br>
+        <input type="text" name="nombre" value="" placeholder=" Ingrese su nombre....."/><br>
 <br>
         <label for="email">Correo electronico</label>
-        <input type="email" name="email" value=""/><br>
+        <input type="email" name="email" value="" placeholder=" Ingrese su mail...."/><br>
 <br>
         <label for="mensaje">Mensaje:</label><br>
         <br>
@@ -38,6 +37,8 @@
 
     </form>
     
+<h2>Muchas gracias por elegirnos!</h2>
+
 </body>
 
 </html>
