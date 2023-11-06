@@ -1,6 +1,5 @@
 import style from "./Card.module.css"
-// Aquí debes utilizar la información que llega por props al componente.
-// Puede hacer destructuring de las propidades del objeto props si quieres
+import { Link } from "react-router-dom";
 
 const Card = (props) => {
   const { id, name, status, species, gender, origin, image, onClose } = props
@@ -18,12 +17,13 @@ const Card = (props) => {
 
       <div className={style.wrapperText}>
         <div className={style.name}>
+          <Link className={style.link}
+          to= {`/detail/${id}`}>
         <h1>{name}</h1>
+        </Link>
         </div>
-          {/*<h2>{status}</h2>*/}
           <h2>Specie: {species}</h2>
           <h2>Genero: {gender}</h2>
-          {/*<h2>{origin}</h2>*/}
           </div>
     </div>
   );

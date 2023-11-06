@@ -1,11 +1,12 @@
 import "./App.css";
 import Nav from "./components/Nav/Nav";
 import { useState } from "react";
-//import Card from "./components/Card/Card";
-//import SearchBar from "./components/SearchBar/SearchBar";
 import Cards from "./components/Cards/Cards";
 import axios from "axios"
-//import characters from "./data.js";
+import { Form, Route, Routes } from "react-router-dom";
+import About from "./components/About/About";
+import Detail from "./components/Detail/Detail";
+import PATHROUTES from "./components/helpers/PathRoutes.helpers";
 
 function App() {
    
@@ -30,13 +31,13 @@ function App() {
   return (
     <>
     <Nav onSearch={onSearch} />
-      {/* Al componente SearchBar le pasamos por la prop "onSearch" una función */}
-      {/*<SearchBar onSearch={(characterID) => window.alert(characterID)} />*/}
+    <Routes>
+      <Route path={PATHROUTES.HOME} element={<Cards characters={characters} onClose={onClose} />} />
+      <Route path={PATHROUTES.ABOUT} element={<About />}/>
+      <Route path={PATHROUTES.DETAIL} element={<Detail />}/>
+      <Route path={PATHROUTES.LOGIN} element={<Form/>} />
 
-      {/* Al componente Cards le pasamos por la prop "characters" el array de personajes que importamos más arriba */}
-      <Cards characters={characters} onClose={onClose} />
-
-      {/* Al componente Card le pasamos las props que corresponden a las propiedades de un personaje y una función "onClose" */}
+    </Routes>
       
     </>
   );
